@@ -36,7 +36,7 @@ export default defineConfig([
       },
       'import/resolver': {
         node: {
-          paths: ['src'],
+          paths: ['.', 'src'],
           extensions: ['.js', '.jsx', '.ts', '.tsx']
         }
       }
@@ -55,6 +55,7 @@ export default defineConfig([
         {
           ignore: [
             '^/.*\\.(svg|png|jpg|jpeg|gif|ico|webp)$',
+            '^src/',
             '^@vitejs/',
             '^@tailwindcss/',
             '^vite$',
